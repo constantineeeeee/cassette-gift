@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const us2PicEl = document.querySelector(".us2");
     const stopEl = document.querySelector(".stop");
 
-    // function playMusic(){
-      // musicEl.play();
-    // }
+    musicEl.preload = "auto";
 
     clickEl.addEventListener("click", () => {
       musicEl.play();
@@ -20,14 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     usPicEl.addEventListener("click", () => {
-      // letterEl.classList.toggle("flap");
       usPicEl.classList.toggle("picFlap");
     });
     us2PicEl.addEventListener("click", () => {
-      // letterEl.classList.toggle("flap");
       us2PicEl.classList.toggle("picFlap");
     });
-
-
-    clickEl.addEventLstener("click", playMusic);
 });
