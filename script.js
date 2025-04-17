@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickEl = document.querySelector("#click");
     const letterEl = document.querySelector(".letter");
     const balloonEl = document.querySelector(".balloon");
-    const usPicEl = document.querySelector(".us");
+    const usPicEl = document.querySelector(".uss");
     const us2PicEl = document.querySelector(".us2");
     const stopEl = document.querySelector(".stop");
 
