@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
 body {
+  font-family: Outfit;
   min-height: 100vh;
-  background: #b8acf0;
+  background: #FFB6C1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +23,9 @@ body {
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .container::before {
@@ -30,6 +38,10 @@ body {
   top: 90px;
   filter: blur(10px);
   transition: 0.5s;
+}
+
+.gif {
+  width: 300px;
 }
 
 .gift {
@@ -92,16 +104,20 @@ body {
   width: 90%;
 }
 
-img {
-  width: 10px;
-}
-
 .us {
   position: absolute;
-  width: 30px;
-  right: -5px;
-  top: -5px;
-  transform: rotate(30deg);
+  width: 80px;
+  right: 2%;
+  bottom: 30%;
+  transform: rotate(10deg);
+}
+
+.us2 {
+  position: absolute;
+  width: 80px;
+  left: 2%;
+  bottom: 30%;
+  transform: rotate(-10deg);
 }
 
 .tobi1{
@@ -147,8 +163,19 @@ img {
 }
 
 #click {
-  display: none;
+  /* display: none; */
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  background-color: #FFB6C1;
+  border-radius: 10px;
 }
+#click:hover{
+  color: #FFB6C1;
+  background-color: white;
+  cursor: pointer;
+}
+
 
 .click {
   position: absolute;
@@ -160,6 +187,7 @@ img {
   transform-origin: bottom left;
   transition: 0.5s;
   border-radius: 10px;
+
 }
 
 .click::before {
@@ -315,6 +343,13 @@ img {
   overflow: visible;
 }
 
+.header {
+  position: absolute;
+  top: 19%;
+  left: 20%;
+  color: white;
+}
+
 @keyframes anim {    
   25% {
       transform: rotate(-2deg);
@@ -343,7 +378,7 @@ img {
   top: 0;
   width: 50px;
   height: 80px;
-  background: #f7a2d6;
+  background: red;
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
@@ -360,7 +395,7 @@ img {
 
 .heartsBG {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   right: 50%;
   z-index: -1;
@@ -378,7 +413,7 @@ img {
   top: 0;
   width: 50px;
   height: 80px;
-  background: #f7c1e2;
+  background: red;
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;

@@ -3,48 +3,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickEl = document.querySelector("#click");
     const letterEl = document.querySelector(".letter");
     const balloonEl = document.querySelector(".balloon");
-    const tobi1El = document.querySelector(".tobi1");
-    const tofi1El = document.querySelector(".tofi");
-    const tobi2El = document.querySelector(".tobi2");
     const usPicEl = document.querySelector(".us");
+    const us2PicEl = document.querySelector(".us2");
+    const stopEl = document.querySelector(".stop");
 
     // function playMusic(){
-      musicEl.play();
+      // musicEl.play();
     // }
 
     clickEl.addEventListener("click", () => {
       musicEl.play();
-      letterEl.classList.toggle("flap");
-      balloonEl.classList.toggle("flapBal");
     });
 
-    letterEl.addEventListener("click", () => {
-      letterCheck = false;
-      letterEl.classList.toggle("flap");
-      clickEl.checked = false;
+    stopEl.addEventListener("click", () => {
+      musicEl.pause();
     });
-
 
     usPicEl.addEventListener("click", () => {
-      letterEl.classList.toggle("flap");
+      // letterEl.classList.toggle("flap");
       usPicEl.classList.toggle("picFlap");
     });
-    
-    tobi1El.addEventListener("click", () => {
-      letterEl.classList.toggle("flap");
-      tobi1El.classList.toggle("picFlap");
-    });
-    
-    tobi2El.addEventListener("click", () => {
-      letterEl.classList.toggle("flap");
-      tobi2El.classList.toggle("picFlap");
+    us2PicEl.addEventListener("click", () => {
+      // letterEl.classList.toggle("flap");
+      us2PicEl.classList.toggle("picFlap");
     });
 
-    
-    tofi1El.addEventListener("click", () => {
-      letterEl.classList.toggle("flap");
-      tofi1El.classList.toggle("picFlap");
-    });
 
     clickEl.addEventLstener("click", playMusic);
 });
