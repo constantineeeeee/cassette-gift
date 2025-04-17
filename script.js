@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const musicEl = document.querySelector("#music");
-    const clickEl = document.querySelector(".play");
+    const clickEl = document.querySelector("#play");
     const usPicEl = document.querySelector(".uss");
     const us2PicEl = document.querySelector(".us2");
     const stopEl = document.querySelector(".stop");
 
-    // musicEl.preload = "auto";
+    musicEl.preload = "auto";
 
     clickEl.addEventListener("click", () => {
       musicEl.play();

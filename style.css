@@ -99,6 +99,19 @@ body {
   cursor: pointer;
 }
 
+.play {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  background-color: #FFB6C1;
+  border-radius: 10px;
+}
+.play:hover{
+  color: #FFB6C1;
+  background-color: white;
+  cursor: pointer;
+}
+
 .flap {
   animation: moveUp 1s;
   animation-fill-mode: forwards;
